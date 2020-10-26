@@ -1,0 +1,62 @@
+body {
+  font-family: "Trebuchet MS","Helvetica","Arial", sans-serif;
+}
+
+#app {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+#horiz {
+  margin-top: 12%;
+  display: flex;
+  flex-flow: column-wrap;
+  justify-content: center;
+}
+
+.post {
+  margin: 1em;
+  padding: 0.5em;
+  font-size: 20px;
+  font-weight: 600;
+  border: 1px solid cornflowerblue;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.xout {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+
+}
+
+.x {
+  color: red;
+}
+
+.tidybutton, .main-text, .anInput {
+  padding: 0.5em;
+  border-radius: 2px;
+  opacity: 0.85;
+  font-weight: 600;
+  font-size: 22px;
+  margin: 0.75em;
+}
+
+.tidybutton {
+  cursor: pointer;
+  color: whitesmoke;
+  background-color: cornflowerblue;
+  border: none;
+
+}
+
+.main-text,
+input {
+  color: cornflowerblue
+  background-color: whitesmoke;
+  border: 2px solid cornflowerblue
+
+}
