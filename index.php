@@ -31,8 +31,8 @@ include 'util/db_con.php';
   </div>
 
   <div id="api">
-    <form style="display:none;" action="" method="POST">
-      <input type="test" id="api-json" /><input type="submit" id="api-submit" />
+    <form style="display:none;" action="/index.php" method="POST">
+      <input type="text" id="api-json" /><input type="submit" id="api-submit" />
     </form>
   </div>
 
