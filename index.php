@@ -1,5 +1,8 @@
 <?php
 include 'util/db_con.php';
+if (!empty($_POST)) {
+  echo 'squiggles';
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -25,10 +28,7 @@ include 'util/db_con.php';
     <button id="save" class="tidybutton">SAVE</button>
   </div>
 
-
-  <div id="app">
-
-  </div>
+  <div id="app"></div>
 
   <div id="api">
     <form style="display:none;" action="/index.php" method="POST">
@@ -37,9 +37,6 @@ include 'util/db_con.php';
   </div>
 
 </body>
-
-
-
 
 <script src="lib/ux-api.js"></script>
 <script src="lib/db-api.js"></script>
