@@ -14,6 +14,7 @@ class DB_Con {
         $path_arr[] = $val;
       }
     }
+    //print_r($path_arr);
     for ($i = 0; $i < count($path_arr); $i++) {
       //
       if ($this->paths[count($path_arr)-1][$path_arr[$i]]) {
