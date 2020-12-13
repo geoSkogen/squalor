@@ -9,19 +9,19 @@ body {
 }
 
 #horiz {
-  margin-top: 12%;
+  margin-top: 2em;
   display: flex;
-  flex-flow: column-wrap;
+  flex-flow: row wrap;
   justify-content: center;
 }
 
 .post {
-  margin: 1em;
-  padding: 0.5em;
+  margin: 0.5em;
+  padding: 0 0.5em;
   font-size: 20px;
   font-weight: 600;
   border: 1px solid cornflowerblue;
-  border-radius: 2px;
+  border-radius: 5px;
   cursor: pointer;
 }
 
@@ -34,11 +34,13 @@ body {
 
 .x {
   color: red;
+  font-size: 30px;
+  padding: 6px 3px 0 3px;
 }
 
 .tidybutton, .main-text, .anInput {
   padding: 0.5em;
-  border-radius: 2px;
+  border-radius: 5px;
   opacity: 0.85;
   font-weight: 600;
   font-size: 22px;
@@ -55,12 +57,21 @@ body {
 
 .main-text,
 input {
-  color: cornflowerblue
+  color: cornflowerblue;
   background-color: whitesmoke;
-  border: 2px solid cornflowerblue
-
+  border: 2px solid cornflowerblue;
 }
 
 .textspan {
-  margin: 1.5em;
+  margin: 0.75em;
+}
+
+.plus {
+  font-size: 36px;
+  color: cornflowerblue;
+}
+
+.back {
+  font-size: 42px;
+  opacity: 0.65;
 }

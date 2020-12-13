@@ -71,7 +71,7 @@ class A_Router {
         $this->get_resources();
         break;
       default :
-        echo " - We're not set up for that rest op yet, Bernard.";
+        echo " - We're not set up for that REST op yet, Bernard.";
     }
     return $this->resources;
   }

@@ -36,7 +36,7 @@ $data = $router->rest_route('/','get');
 <body>
 
   <div id="horiz">
-    <input type="text" id="callresponse" class="main-text"/>
+    <input type="text" id="callresponse" class="main-text" />
     <button id="go" class="tidybutton">GO</button><br/>
     <button id="save" class="tidybutton">SAVE</button>
   </div>
