@@ -5,6 +5,7 @@ class DB_Exec {
   public $table_cols;
   public $test_query;
   public $connection;
+  public $weird_spec;
 
   function __construct() {
     $this->db_conn();
@@ -17,16 +18,14 @@ class DB_Exec {
     )";
     $this->test_query = "SHOW TABLES LIKE '%{$this->table_name}'";
     print_r($this->query($this->test_query),true);
-    if (!empty($this->query($this->test_query)===$this->table_name)) {
-      echo 'db table found';
+    if (!empty($this->query($this->test_query)==$this->table_name)) {
+      echo '<span class="db_msg"> database table found; </span>';
     } else {
       $resp = $this->query($this->table_cols);
       if ($resp) {
-        echo 'your db table is created';
+        echo '<span class="db_msg">your database table has been created</span>';
       } else {
-        print($resp);
-        print_r($this->query($this->test_query),true);
-        echo 'an error occurred with table creation';
+        echo '<span class="db_msg"> an error occurred with table creation; </span>';
       }
     }
   }
@@ -51,7 +50,7 @@ class DB_Exec {
     $clean_str = $this->escape_string($sql);
     $result = $this->connection->query($sql);
     if (!$result) {
-      print('query error:');
+      print('<span class="db_msg"> query error; </span>');
       print_r($result,true);
     }
     return $result;

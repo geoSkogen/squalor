@@ -75,3 +75,7 @@ input {
   font-size: 42px;
   opacity: 0.65;
 }
+
+.db_msg {
+  display: none;
+}

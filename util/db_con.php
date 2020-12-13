@@ -29,6 +29,7 @@ class DB_Con {
     if ($result) {
       $this->config($result);
     } else {
+      echo "<h1>REST path queen mother of all errors - here's your plate of spaghetti:</h1>";
       print_r($uri_arr);
       print_r($path_arr);
       echo $result;

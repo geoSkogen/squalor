@@ -50,11 +50,11 @@ class A_Router {
         }
       }
       if (count($errs)) {
-        echo ' - changes saved with error(s): ' .  strval(count($errs));
+        echo '<span class="db_msg"> changes saved with error(s): ' .  strval(count($errs)) . '; </span';
 
       }
     } else {
-      echo ' - something went wrong ; database overwrite error';
+      echo '<span class="db_msg"> - something went wrong ; database overwrite error; </span>';
     }
     return $this->resources;
   }
@@ -71,7 +71,7 @@ class A_Router {
         $this->get_resources();
         break;
       default :
-        echo " - We're not set up for that REST op yet, Bernard.";
+        echo '<span class="db_msg"> -  We`re not set up for that REST op yet, Bernard.</span>';
     }
     return $this->resources;
   }
