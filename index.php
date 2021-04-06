@@ -10,6 +10,7 @@ $router = new A_Router();
 $data = [];
 
 if (!empty($_POST['api-json'])) {
+  //TRY AGAIN : don't post the raw contents of the form field no matter how the client side script 'normalized' it
   $router->rest_route($_POST['api-json'],'post');
 }
 
